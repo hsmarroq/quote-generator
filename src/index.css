@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Barlow:wght@100&family=Comfortaa&family=Dosis:wght@200&family=Meow+Script&family=Oxygen&family=Pacifico&family=Quicksand:wght@300;400&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Barlow:wght@100&family=Comfortaa&family=Dosis:wght@200;500&family=Meow+Script&family=Oxygen&family=Pacifico&family=Quicksand:wght@300;400&family=Water+Brush&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 body {
   height: 100vh;
-  background-color: #c9c9c9;
+  background-color: #73b8c7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -62,7 +62,103 @@ body {
 
 .quote-box-container {
   background-color: #fff;
-  width: 450px;
+  width: 500px;
   height: auto;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+
+.quote {
+  margin-top: 20px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+}
+
+.quote-logo {
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  color: #73b8c7;
+}
+
+.paragraph {
+  height: auto;
+  font-family: 'Dosis', sans-serif;
+  /* font-weight: 500; */
+  font-size: 20px;
+  width: 480px;
+  color: #73b8c7;
+}
+
+.author-name {
+  margin-top: 20px;
+  margin-left: 300px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  color: #73b8c7;
+}
+
+.share-new {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  gap: 120px;
+}
+
+.share-quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+.share-logo {
+  height: 40px;
+  width: 30px;
+  color: #73b8c7;
+}
+
+.share-logo:hover {
+  color: #333;
+}
+
+.share-logo:active {
+  transform: translate(1px);
+}
+
+.new-quote {
+  height: 40px;
+  width: 100px;
+  border: none;
+  background-color: #73b8c7;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.new-quote:hover {
+  background-color: #333;
+}
+
+.new-quote:active {
+  transform: translate(1px);
+}
+
+@media screen and (max-width: 500px) {
+  .quote-box-container {
+    width: 90vw;
+  }
+
+  .paragraph {
+    width: 80vw;
+  }
+
+  .author-name {
+    margin-left: 200px;
+  }
 }
