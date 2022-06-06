@@ -9,7 +9,6 @@
 
 body {
   height: 100vh;
-  background-color: #73b8c7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,6 +16,7 @@ body {
 .App {
   height: 100vh;
   width: 100%;
+  background-color: #73b8c7;
   display: flex;
   flex-direction: column;
   gap: 15vh;
@@ -89,14 +89,14 @@ body {
   height: auto;
   font-family: 'Dosis', sans-serif;
   /* font-weight: 500; */
-  font-size: 20px;
+  font-size: 30px;
   width: 480px;
   color: #73b8c7;
 }
 
 .author-name {
   margin-top: 20px;
-  margin-left: 300px;
+  margin-left: 250px;
   font-family: 'Oxygen', sans-serif;
   font-size: 15px;
   color: #73b8c7;
