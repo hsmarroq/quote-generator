@@ -1,10 +1,10 @@
-import Header from './components/Header';
+// import Header from './components/Header';
 import QuoteBox from './components/QuoteBox';
 
 function App() {
   return (
     <div className='App'>
-      <Header />
+      {/* <Header /> */}
       <QuoteBox />
     </div>
   );
